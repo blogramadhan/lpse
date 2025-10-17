@@ -1,0 +1,26 @@
+INSTRUKSI PENAMBAHAN LOGO KALIMANTAN BARAT
+==========================================
+
+Untuk menampilkan logo Provinsi Kalimantan Barat (Akcaya) di aplikasi ini:
+
+1. Siapkan file logo dengan format PNG (disarankan untuk transparansi background)
+
+2. Simpan file logo dengan nama: logo-kalbar.png
+
+3. Letakkan file tersebut di folder: /public/logo-kalbar.png
+
+4. Spesifikasi logo yang disarankan:
+   - Format: PNG (dengan background transparan)
+   - Ukuran: Minimal 300x300 pixels
+   - Resolusi: 72 DPI atau lebih tinggi untuk tampilan web
+
+5. Setelah file logo ditempatkan, aplikasi akan otomatis menampilkan:
+   - Logo di header halaman (ukuran responsif)
+   - Logo sebagai favicon di browser tab
+
+LOKASI LOGO:
+/home/rizko/coding/python/project/lpse/public/logo-kalbar.png
+
+Jika Anda ingin mengunduh logo resmi Provinsi Kalimantan Barat:
+- Kunjungi website resmi Pemerintah Provinsi Kalimantan Barat
+- Atau hubungi Bagian Humas Setda Provinsi Kalimantan Barat

@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  lpse-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lpse-biro-pbj
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - lpse-network
+
+networks:
+  lpse-network:
+    driver: bridge
