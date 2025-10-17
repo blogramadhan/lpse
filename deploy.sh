@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 # Configuration
 CONTAINER_NAME="lpse-biro-pbj"
 IMAGE_NAME="lpse-web"
-PORT=3000
+PORT=3060
 GIT_BRANCH="master"  # atau "main" sesuai branch default Anda
 
 # Functions

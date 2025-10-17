@@ -26,8 +26,8 @@ RUN npm install -g serve
 # Copy built files from builder stage
 COPY --from=builder /app/dist ./dist
 
-# Expose port 3000
-EXPOSE 3000
+# Expose port 3060
+EXPOSE 3060
 
 # Start the application
-CMD ["serve", "-s", "dist", "-l", "3000"]
+CMD ["serve", "-s", "dist", "-l", "3060"]

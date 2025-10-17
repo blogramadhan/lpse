@@ -61,7 +61,7 @@ Script akan otomatis:
 Setelah deployment berhasil, aplikasi dapat diakses di:
 
 ```
-http://localhost:3000
+http://localhost:3060
 ```
 
 ---
@@ -206,7 +206,7 @@ server {
     server_name pbj.kalbarprov.go.id;
 
     location / {
-        proxy_pass http://localhost:3000;
+        proxy_pass http://localhost:3060;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -232,11 +232,11 @@ docker ps -a
 ### Port Sudah Digunakan:
 ```bash
 # Cek port yang digunakan
-sudo lsof -i :3000
+sudo lsof -i :3060
 
 # Ubah port di docker-compose.yml
 ports:
-  - "3001:3000"  # Ganti 3001 dengan port yang tersedia
+  - "3061:3060"  # Ganti 3061 dengan port yang tersedia
 ```
 
 ### Logo Tidak Tampil:
@@ -255,7 +255,7 @@ docker compose up -d
 ## Spesifikasi Teknis
 
 - **Base Image**: Node.js 20 Alpine
-- **Port**: 3000
+- **Port**: 3060
 - **Container Name**: lpse-biro-pbj
 - **Network**: lpse-network (bridge)
 - **Restart Policy**: unless-stopped
