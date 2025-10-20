@@ -21,13 +21,13 @@ const ServiceCard = ({ title, description, url, icon, color, delay }) => {
         stiffness: 100,
         damping: 15
       }}
-      w={{ base: 'full', md: '280px', xl: '260px' }}
-      maxW="320px"
+      w="full"
+      maxW={{ base: '340px', sm: '280px', md: '260px', lg: '240px', xl: '220px' }}
     >
       <Box
         position="relative"
         h="full"
-        minH={{ base: '280px', md: '320px' }}
+        minH={{ base: '300px', sm: '280px', md: '300px' }}
         cursor="pointer"
         role="group"
       >
@@ -142,7 +142,7 @@ const ServiceCard = ({ title, description, url, icon, color, delay }) => {
             {/* Title with Icon */}
             <VStack spacing={2} w="full">
               <Heading
-                size={{ base: 'md', md: 'lg' }}
+                fontSize={{ base: 'sm', sm: 'md', md: 'md' }}
                 color="gray.800"
                 fontWeight="bold"
                 letterSpacing="tight"

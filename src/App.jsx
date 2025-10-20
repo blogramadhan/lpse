@@ -32,6 +32,20 @@ function App() {
       color: 'green',
     },
     {
+      title: 'E-KATALOG V6',
+      description: 'Platform E-Katalog INAPROC untuk pengadaan barang dan jasa secara elektronik',
+      url: 'https://katalog.inaproc.id',
+      icon: '📦',
+      color: 'cyan',
+    },
+    {
+      title: 'TOKO DARING',
+      description: 'Platform Toko Daring INAPROC untuk belanja kebutuhan pengadaan secara online',
+      url: 'https://katalog.inaproc.id/tokodaring',
+      icon: '🛒',
+      color: 'pink',
+    },
+    {
       title: 'SIPRAJA',
       description: 'Sistem Informasi Pengadaan Barang dan Jasa (Review Paket)',
       url: 'https://sipraja.kalbarprov.go.id',
@@ -44,13 +58,6 @@ function App() {
       url: 'https://sip-spse.kalbarprov.go.id',
       icon: '💼',
       color: 'teal',
-    },
-    {
-      title: 'VMS',
-      description: 'Visitor Management System',
-      url: 'https://vms.kalbarprov.go.id',
-      icon: '👥',
-      color: 'orange',
     },
   ]
 
@@ -143,20 +150,24 @@ function App() {
         </VStack>
 
         {/* Services Grid */}
-        <SimpleGrid
-          columns={{ base: 1, md: 2, xl: 5 }}
-          spacing={{ base: 6, md: 8 }}
-          mb={16}
-          justifyItems="center"
-        >
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              {...service}
-              delay={0.15 * (index + 1)}
-            />
-          ))}
-        </SimpleGrid>
+        <Box w="full" display="flex" justifyContent="center" mb={16}>
+          <SimpleGrid
+            columns={{ base: 1, sm: 2, md: 3, lg: 3, xl: 6 }}
+            spacing={{ base: 6, md: 8 }}
+            justifyItems="center"
+            alignItems="center"
+            w="fit-content"
+            mx="auto"
+          >
+            {services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                {...service}
+                delay={0.15 * (index + 1)}
+              />
+            ))}
+          </SimpleGrid>
+        </Box>
 
         {/* Footer */}
         <MotionBox
