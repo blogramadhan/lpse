@@ -41,7 +41,7 @@ function App() {
     {
       title: 'TOKO DARING',
       description: 'Platform Toko Daring INAPROC untuk belanja kebutuhan pengadaan secara online',
-      url: 'https://katalog.inaproc.id/tokodaring',
+      url: 'https://katalog.inaproc.id/toko-daring',
       icon: '🛒',
       color: 'pink',
     },
